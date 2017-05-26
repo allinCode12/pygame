@@ -9,5 +9,8 @@ check_errors = pygame.init()
 if check_errors[1] > 0:
     print("(!) Had {0} initializing errors, exiting....")
 
+    print("Hello ")
+
+
 
 
