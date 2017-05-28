@@ -1,13 +1,26 @@
 #Snake Game
 
 import pygame
-import sys
-import random
-import time
 
-check_errors = pygame.init()
-if check_errors[1] > 0:
-    print("(!) Had {0} initializing errors, exiting....")
-    print("Hello World")
+pygame.init()
+game_Display = pygame.display.set_mode((1000, 700))
+pygame.display.set_caption('Racing')
+clock = pygame.time.Clock()
+
+Exit = False
+
+while not Exit:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            Exit = True
+
+
+
+
+    pygame.display.update()
+
+
+pygame.quit()
+quit()
 
 
